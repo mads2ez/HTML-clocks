@@ -1,56 +1,52 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Maxim Sivtcev</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Web Clock</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  </head>
+  <body>
+    <div class="content-container">
+      <div class="blur"></div>
 
-  <header>
-    <div class="header-wrap">
-      <img class="header-logo" src="img/DSC_5994.JPG">
-      <div class="header-title-wrap">
-        <h1 class="header-title">Maxim Sivtcev</h1>
-        <p class="header-desc">Product Manager/UX Researcher at <a target="_blank" href="http://indriver.com">inDriver</a></p>
+    <div class="clock-container">
+      <div class="time-board">
+        <div id="time"></div>
+        <div id="date"></div>
       </div>
-      <!-- <div class="links">
-        <a target="_blank" href="https://twitter.com/mads2ez">twitter</a>
-        <a target="_blank" href="https://github.com/mads2ez">github</a>
-        <a target="_blank" href="mailto:maximsivtsev@gmail.com">email</a>
-      </div> -->
-    </div>
-  </header>
 
-  <section class="work">
-    <h2 id="work">work</h2>
+      <button type="button" id="addalarm">set alarm</button>
 
-    <div class="thumb-wrap">
-    <!-- content goes here -->
-    <!-- <a href="https://github.com/mads2ez" class="thumb-item">
-      <div class="thumb-overlay" style="background-image: url(img/framer-icon.png)">
-        <div class="thumb-shade">
-          <div class="thumb-shade-title">view</div>
+      <div class="alarms-container">
+          <ul id="alarms">
+
+          </ul>
         </div>
+
       </div>
 
-      <p class="thumb-title">test</p>
-    </a> -->
+    </div>
+
+    <div class="alarm_modal">
+      <div class="blur"></div>
+
+      <div class="modal-wrap">
+        <div class="modal-title">Alarm</div>
+        <form id="alarmform" action="" method="">
+          <ul>
+          <input type="time" id="alarm_time" />
+          <input type="submit" value="Set alarm" id="submit" />
+          </ul>
+        </form>
+      </div>
 
     </div>
 
-  </section>
-
-  <footer>
-    <div class="footer-title">Contact me</div>
-    <div class="footer-links">
-      <a target="_blank" href="https://twitter.com/mads2ez"><img class="footer-link"  src="img/twitter.svg" alt="" /></a>
-      <a target="_blank" href="https://github.com/mads2ez"><img class="footer-link"  src="img/github.svg" alt="" /></a>
-      <a target="_blank" href="mailto:maximsivtsev@gmail.com"><img class="footer-link"  src="img/mail.svg" alt="" /></a>
     </div>
-  </footer>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
