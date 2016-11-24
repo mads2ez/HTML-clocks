@@ -17,7 +17,7 @@ function showModal() {
 }
 
 // execute alarm
-var audio = new Audio('sound/surroundings.mp3');
+var audio = new Audio('sound/wakeup.mp3');
 
 var fireAlarm = function() {
 	audio.play();
