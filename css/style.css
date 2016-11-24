@@ -87,7 +87,7 @@ body {
   transform: rotate(-90deg);
 }
 
-.circle_animation {
+#circle {
   r: 49%;
   cy: 50%;
   cx: 50%;
@@ -95,11 +95,23 @@ body {
   stroke: #ffffff;
   stroke-opacity: 0.5;
   fill: none;
+}
 
+.circle_animation {
   stroke-dasharray: 1539; /* this value is the pixel circumference of the circle */
   stroke-dashoffset: 1539;
   transition: all 1s linear;
+  /*animation: 60s seconds linear infinite;*/
 }
+
+/*@keyframes seconds {
+  0% {
+    stroke-dashoffset: 1539;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}*/
 
 #time {
   font-size: 7em;

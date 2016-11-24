@@ -139,10 +139,10 @@ var showCurrentTime = function() {
 	var time = padfield(today.getHours()) + ":" + padfield(today.getMinutes());
 	var d = today.getDate();
   var w = today.getDay();
+  var initialOffset = 1538;
+  $circle.style['stroke-dashoffset'] = initialOffset-(s*(initialOffset/60));
   $time.innerHTML = time;
 	$date.innerHTML = d + " " + day(w);
-  var initialOffset = 1539;
-  $circle.style['stroke-dashoffset'] = initialOffset-(s*(initialOffset/60));
 };
 
 // event handlers
