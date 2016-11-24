@@ -132,7 +132,14 @@ var day = function(day) {
 	}
 };
 
+
 // show current time
+window.requestAnimationFrame = window.requestAnimationFrame
+                               || window.mozRequestAnimationFrame
+                               || window.webkitRequestAnimationFrame
+                               || window.msRequestAnimationFrame
+                               || function(f){setTimeout(f, 60)}
+
 var showCurrentTime = function() {
   var today = new Date();
   var s = today.getSeconds();
@@ -143,6 +150,7 @@ var showCurrentTime = function() {
   $circle.style['stroke-dashoffset'] = initialOffset-(s*(initialOffset/60));
   $time.innerHTML = time;
 	$date.innerHTML = d + " " + day(w);
+  requestAnimationFrame(showCurrentTime);
 };
 
 // event handlers
@@ -160,6 +168,9 @@ $alarmForm.addEventListener('submit', function(e) {
 	}
 });
 
-setInterval(function() {
-  showCurrentTime()
-}, 1000);
+// setInterval(function() {
+//   showCurrentTime()
+// }, 1000);
+
+
+requestAnimationFrame(showCurrentTime);
