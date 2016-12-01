@@ -18,7 +18,7 @@ body {
 
 .blur {
   transform: translate(0px, 0px, 0px);
-  background-image: url("https://cdn.pixabay.com/photo/2014/05/02/23/46/new-york-city-336475_960_720.jpg");
+  background-image: url("../img/bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
