@@ -243,13 +243,3 @@ body {
   opacity: 1;
   background-image: url("../img/ic_alarm_off_white_24px.svg");
 }
-
-.active {
-  opacity: 1;
-  transition: opacity 2s linear;
-}
-
-.hidden {
-  opacity: 0;
-  transition: opacity 2s linear;
-}

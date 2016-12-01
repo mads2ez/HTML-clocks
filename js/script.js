@@ -141,6 +141,10 @@ $setAlarmInput.onclick = function(event) {
   SetAlarmBtn.style.opacity = 1;
 }
 
+$setAlarmInput.onfocus = function() {
+  SetAlarmBtn.style.opacity = 1;
+}
+
 SetAlarmBtn.onclick = function(event) {
   event.stopPropagation();
   var alarm = $setAlarmInput.value;
